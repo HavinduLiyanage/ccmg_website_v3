@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact — CCMG | Strategic Advisory Sri Lanka</title>
+    <meta name="description" content="Get in touch with CCMG. Our senior advisors are ready to discuss your infrastructure, ESG, or market entry objectives in Sri Lanka." />
+    <meta property="og:title" content="Contact CCMG — Strategic Advisory Sri Lanka" />
+    <meta property="og:description" content="Reach our senior advisory team for infrastructure, ESG, and market entry engagements." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://colomboconsultants.lk/pages/contact.html" />
+    <link rel="canonical" href="https://colomboconsultants.lk/pages/contact.html" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#050B14","primary-light": "#0F1A2C","accent": "#1E314B",
+                        "teal": "#0F766E","teal-dark": "#042F2E","teal-light": "#14B8A6",
+                        "ivory": "#F8FAFC","warm": "#F1F5F9",
+                    },
+                    fontFamily: { "sans": ["Inter","sans-serif"], "serif": ["Outfit","serif"] },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; }
+        ::selection { background: rgba(10,38,71,0.12); color: #0A2647; }
+        .grid-line { position: absolute; top: 0; bottom: 0; width: 1px; background-color: rgba(0,0,0,0.04); pointer-events: none; z-index: 0; }
+        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+        .reveal.revealed { opacity: 1; transform: translateY(0); }
+        .reveal-left { transform: translateX(-40px); }
+        .reveal-left.revealed { transform: translateX(0); }
+        .stagger-1 { transition-delay: 0.1s; } .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; } .stagger-4 { transition-delay: 0.4s; }
+        @keyframes heroFadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .hero-tag { animation: heroFadeUp 0.8s 0.2s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+        .hero-title { animation: heroFadeUp 0.8s 0.4s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+        .hero-sub { animation: heroFadeUp 0.8s 0.6s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+        .noise-overlay::after { content: ''; position: absolute; inset: 0; z-index: 1; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E"); pointer-events: none; }
+        ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #FAFAF8; } ::-webkit-scrollbar-thumb { background: #0A2647; border-radius: 3px; }
+        .mobile-menu { transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94); }
+        .mobile-menu.open { transform: translateX(0); }
+        .mobile-overlay { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .mobile-overlay.open { opacity: 1; pointer-events: auto; }
+        .parallax-img { transition: transform 0.1s linear; will-change: transform; }
+        input, textarea, select { font-family: 'Inter', sans-serif; }
+        input:focus, textarea:focus, select:focus { outline: none; }
+    </style>
+</head>
+<body class="bg-ivory text-slate-800 antialiased">
+
+<!-- Grid Lines -->
+<div class="fixed inset-0 w-full h-full pointer-events-none mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 hidden xl:flex justify-between z-0">
+    <div class="grid-line" style="left:0"></div><div class="grid-line" style="left:25%"></div>
+    <div class="grid-line" style="left:50%"></div><div class="grid-line" style="left:75%"></div>
+    <div class="grid-line" style="right:0"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html" class="flex-shrink-0 flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-shadow">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-sans font-bold text-lg tracking-tight text-primary uppercase leading-none">CCMG</span>
+                    <span class="text-[9px] font-medium text-slate-400 tracking-[0.15em] uppercase leading-none mt-0.5">Advisory Group</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-10 text-[13px] font-medium tracking-wide">
+                <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="index.html">Home</a>
+                <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="about.html">About</a>
+                <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="services.html">Services</a>
+                <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="projects.html">Projects</a>
+                <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="sustainability.html">Sustainability</a>
+                <a class="text-primary border-b-2 border-primary pb-0.5" href="contact.html">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center">
+                <a class="bg-primary hover:bg-teal text-white px-7 py-3 rounded-full text-xs font-bold uppercase tracking-widest shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5" href="contact.html">Book a Consultation</a>
+            </div>
+            <button id="mobile-toggle" class="lg:hidden flex items-center text-primary" type="button" aria-label="Open menu">
+                <i class="ph ph-list text-[28px]"></i>
+            </button>
+        </div>
+    </div>
+</header>
+<div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-black/50 z-[60] backdrop-blur-sm"></div>
+<div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-[70] shadow-2xl">
+    <div class="flex justify-between items-center p-6 border-b border-slate-100">
+        <span class="font-sans font-bold text-lg text-primary uppercase">Menu</span>
+        <button id="mobile-close" class="text-slate-400 hover:text-primary" aria-label="Close menu"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="p-6 space-y-1">
+        <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="index.html">Home</a>
+        <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="about.html">About</a>
+        <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="services.html">Services</a>
+        <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="projects.html">Projects</a>
+        <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="sustainability.html">Sustainability</a>
+        <a class="block py-3 px-4 text-primary font-semibold bg-primary/5 rounded-lg" href="contact.html">Contact</a>
+    </nav>
+    <div class="p-6 border-t border-slate-100">
+        <a class="block text-center bg-primary text-white py-3.5 rounded-full text-sm font-bold uppercase tracking-widest" href="contact.html">Book a Consultation</a>
+    </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="relative z-10 h-[70vh] min-h-[500px] flex items-end overflow-hidden noise-overlay pb-0">
+    <div class="absolute inset-0 z-0">
+        <img alt="CCMG office Colombo" class="w-full h-full object-cover parallax-img image-grade"
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80" loading="eager" />
+        <div class="absolute inset-0 bg-primary/75 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pb-20">
+        <div class="hero-tag inline-flex items-center gap-3 mb-6">
+            <span class="h-px w-10 bg-teal-light"></span>
+            <span class="text-teal-light text-[11px] font-bold tracking-[0.25em] uppercase">Let's Talk</span>
+        </div>
+        <h1 class="hero-title text-[clamp(2.8rem,6vw,5.5rem)] font-serif text-white leading-[1.05] mb-5 tracking-tight font-medium max-w-3xl">
+            Start the Conversation
+        </h1>
+        <p class="hero-sub text-xl text-slate-300 max-w-xl leading-relaxed font-light">
+            Our senior advisors respond within 4 hours. No gatekeepers — direct access from day one.
+        </p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-ivory to-transparent z-10"></div>
+</section>
+
+<!-- ============ CONTACT SPLIT ============ -->
+<section class="relative z-20 py-24 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+            <!-- Form Column -->
+            <div class="lg:col-span-7 reveal">
+                <div class="mb-10">
+                    <span class="text-teal text-[11px] font-bold tracking-[0.25em] uppercase">Send us a message</span>
+                    <h2 class="text-3xl md:text-4xl font-serif text-primary mt-2 mb-3">How can we help?</h2>
+                    <p class="text-slate-500 font-light text-base leading-relaxed">Tell us about your project, investment, or challenge. We'll route your inquiry to the right senior advisor.</p>
+                </div>
+
+                <!-- WIRE: Replace action="" with your Antigravity/backend endpoint -->
+                <!-- WIRE: Add method="POST" when endpoint is ready -->
+                <form id="contact-form" action="" class="space-y-6">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2" for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first_name" required
+                                class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-800 placeholder-slate-300 focus:border-teal focus:ring-2 focus:ring-teal/20 transition-all duration-200"
+                                placeholder="John" />
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2" for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last_name" required
+                                class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-800 placeholder-slate-300 focus:border-teal focus:ring-2 focus:ring-teal/20 transition-all duration-200"
+                                placeholder="Smith" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2" for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-800 placeholder-slate-300 focus:border-teal focus:ring-2 focus:ring-teal/20 transition-all duration-200"
+                                placeholder="john@company.com" />
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2" for="organisation">Organisation</label>
+                            <input type="text" id="organisation" name="organisation"
+                                class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-800 placeholder-slate-300 focus:border-teal focus:ring-2 focus:ring-teal/20 transition-all duration-200"
+                                placeholder="Acme International" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2" for="service">Area of Interest *</label>
+                        <div class="relative">
+                            <select id="service" name="service" required
+                                class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-800 focus:border-teal focus:ring-2 focus:ring-teal/20 transition-all duration-200 appearance-none pr-10">
+                                <option value="" disabled selected>Select a service area</option>
+                                <option value="local-rep">Strategic Local Representation & Market Entry</option>
+                                <option value="power-gas">Power & Gas Advisory</option>
+                                <option value="esg">Sustainability & ESG Consulting</option>
+                                <option value="ppp">PPP Structuring & Transaction Advisory</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                            <i class="ph ph-caret-down absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-[18px] pointer-events-none"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-2" for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-800 placeholder-slate-300 focus:border-teal focus:ring-2 focus:ring-teal/20 transition-all duration-200 resize-none"
+                            placeholder="Briefly describe your project, investment, or inquiry..."></textarea>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="consent" name="consent" required
+                            class="mt-1 w-4 h-4 border-slate-300 rounded text-teal focus:ring-teal/20 cursor-pointer flex-shrink-0" />
+                        <label for="consent" class="text-xs text-slate-500 font-light leading-relaxed cursor-pointer">
+                            I agree to CCMG processing my data to respond to this inquiry. View our <a href="#" class="text-teal hover:underline">Privacy Policy</a>.
+                        </label>
+                    </div>
+
+                    <!-- WIRE: Add event handler or form submission logic here -->
+                    <button type="submit" id="submit-btn"
+                        class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-primary hover:bg-teal text-white px-10 py-4 rounded-full text-[13px] font-bold uppercase tracking-widest shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                        Send Inquiry
+                        <i class="ph ph-send text-base"></i>
+                    </button>
+                </form>
+
+                <!-- Success State (hidden by default) -->
+                <!-- WIRE: Show this on successful submission -->
+                <div id="form-success" class="hidden mt-6 p-6 bg-teal/5 border border-teal/20 rounded-2xl">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-8 h-8 bg-teal rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="ph ph-check text-white text-sm"></i>
+                        </div>
+                        <h3 class="font-serif text-lg text-primary font-semibold">Message received</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm font-light">Thank you for reaching out. A senior advisor will respond within 4 business hours.</p>
+                </div>
+            </div>
+
+            <!-- Info Column -->
+            <div class="lg:col-span-5 space-y-8">
+
+                <!-- Response SLA card -->
+                <div class="reveal stagger-2 bg-primary rounded-2xl p-8 text-white">
+                    <h3 class="font-serif text-2xl mb-6">What to expect</h3>
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="ph ph-clock text-teal-light text-[18px]"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-white mb-1">Response within 4 hours</p>
+                                <p class="text-slate-400 text-xs font-light leading-relaxed">We route every inquiry directly to the relevant senior advisor — no junior filters.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="ph ph-video-call text-teal-light text-[18px]"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-white mb-1">30-minute discovery call</p>
+                                <p class="text-slate-400 text-xs font-light leading-relaxed">Your first conversation will be a structured, no-commitment scoping session.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="ph ph-file-text text-teal-light text-[18px]"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-white mb-1">Tailored engagement proposal</p>
+                                <p class="text-slate-400 text-xs font-light leading-relaxed">Following the call, we'll share a scoped proposal within 48 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Details card -->
+                <div class="reveal stagger-3 bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+                    <h3 class="font-serif text-xl text-primary mb-6">Direct contact</h3>
+                    <div class="space-y-5 text-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="w-9 h-9 bg-primary/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ph ph-location-on text-primary text-[18px]"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-slate-800 mb-0.5">Colombo Office</p>
+                                <p class="text-slate-500 font-light leading-relaxed">Colombo, Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-9 h-9 bg-primary/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ph ph-mail text-primary text-[18px]"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-slate-800 mb-0.5">Email</p>
+                                <a href="mailto:info@colomboconsultants.lk" class="text-teal hover:text-teal-dark transition-colors font-light">info@colomboconsultants.lk</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-9 h-9 bg-primary/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ph ph-call text-primary text-[18px]"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-slate-800 mb-0.5">Phone</p>
+                                <a href="tel:+94773047315" class="text-teal hover:text-teal-dark transition-colors font-light">+94 77 304 7315</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Working with us note -->
+                <div class="reveal stagger-4 border-l-2 border-teal pl-6 py-1">
+                    <p class="text-slate-500 text-sm font-light leading-relaxed italic">
+                        "We work best when we understand your full strategic context — not just the immediate ask. The more you share, the better we can scope."
+                    </p>
+                    <p class="text-primary text-xs font-bold uppercase tracking-widest mt-3">— CCMG Senior Advisory Team</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-primary text-white pt-24 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20 border-b border-white/10 pb-16">
+            <div class="md:col-span-4 pr-8">
+                <div class="flex items-center gap-2 mb-8">
+                    <div class="w-7 h-7 bg-white/10 flex items-center justify-center text-white">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <span class="font-sans font-bold text-lg tracking-tight text-white uppercase">CCMG</span>
+                </div>
+                <h4 class="font-serif text-3xl mb-6 text-slate-100">Global reach,<br/>local insight.</h4>
+                <p class="text-slate-400 text-sm font-light leading-relaxed max-w-sm">Sri Lanka's premier infrastructure strategy firm. Delivering clarity in complex environments through rigorous analysis and on-ground expertise.</p>
+            </div>
+            <div class="md:col-span-2 md:col-start-7">
+                <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-8">Sitemap</h5>
+                <ul class="space-y-4 text-sm font-light text-slate-300">
+                    <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+                    <li><a class="hover:text-white transition-colors" href="about.html">About</a></li>
+                    <li><a class="hover:text-white transition-colors" href="services.html">Services</a></li>
+                    <li><a class="hover:text-white transition-colors" href="projects.html">Projects</a></li>
+                    <li><a class="hover:text-white transition-colors" href="sustainability.html">Sustainability</a></li>
+                    <li><a class="hover:text-white transition-colors" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-8">Legal</h5>
+                <ul class="space-y-4 text-sm font-light text-slate-300">
+                    <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+                </ul>
+                <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-4 mt-10">Partners</h5>
+                <ul class="space-y-4 text-sm font-light text-slate-300">
+                    <li><a class="hover:text-white transition-colors" href="https://www.carboncompass.com/" target="_blank" rel="noopener">Carbon Compass</a></li>
+                    <li><a class="hover:text-white transition-colors" href="https://www.earthood.com/" target="_blank" rel="noopener">Earthood</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-8">Contact</h5>
+                <address class="not-italic text-sm font-light text-slate-300 space-y-1">
+                    <p>Colombo, Sri Lanka</p>
+                    <p class="mt-6"><a class="text-white border-b border-white/30 hover:border-white pb-px transition-colors" href="mailto:info@colomboconsultants.lk">info@colomboconsultants.lk</a></p>
+                    <p><a class="text-white border-b border-white/30 hover:border-white pb-px transition-colors" href="tel:+94773047315">+94 77 304 7315</a></p>
+                </address>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 font-light">
+            <p>&copy; 2025 Colombo Consultants &amp; Management Group. All rights reserved.</p>
+            <div class="flex items-center gap-3 mt-4 md:mt-0">
+                <span class="text-[10px] uppercase tracking-widest text-slate-600">Gold Standard Partner</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileClose = document.getElementById('mobile-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    function openMenu() { mobileMenu.classList.add('open'); mobileOverlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('open'); mobileOverlay.classList.remove('open'); document.body.style.overflow = ''; }
+    mobileToggle.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+    mobileOverlay.addEventListener('click', closeMenu);
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('revealed'); observer.unobserve(entry.target); } });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('site-header');
+        if (window.scrollY > 100) header.classList.add('shadow-md');
+        else header.classList.remove('shadow-md');
+    }, { passive: true });
+
+    window.addEventListener('scroll', () => {
+        const img = document.querySelector('.parallax-img');
+        if (img) img.style.transform = `translateY(${window.scrollY * 0.3}px) scale(1.1)`;
+    }, { passive: true });
+
+    // WIRE: Replace this with Antigravity form submission handler
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // TODO: Wire to Antigravity endpoint
+        // document.getElementById('contact-form').classList.add('hidden');
+        // document.getElementById('form-success').classList.remove('hidden');
+        console.log('Form submit — wire to Antigravity endpoint');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+    });
+</script>
+</body>
+</html>
+
+

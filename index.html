@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CCMG — Strategic Advisory & Infrastructure Partners | Sri Lanka</title>
+    <meta name="description" content="Colombo Consultants & Management Group (CCMG) — Sri Lanka's premier infrastructure strategy and ESG advisory firm. Local representation, PPP advisory, and sustainability consulting." />
+    <meta name="keywords" content="CCMG, Colombo Consultants, Sri Lanka advisory, infrastructure consulting, ESG, sustainability, PPP, market entry Sri Lanka, Gold Standard partner" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CCMG — Strategic Advisory & Infrastructure Partners" />
+    <meta property="og:description" content="Sri Lanka's premier infrastructure strategy firm. Global reach, local insight." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://colomboconsultants.lk/" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CCMG — Strategic Advisory & Infrastructure Partners" />
+    <meta name="twitter:description" content="Sri Lanka's premier infrastructure strategy firm. Global reach, local insight." />
+
+    <link rel="canonical" href="https://colomboconsultants.lk/" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#050B14",
+                        "primary-light": "#0F1A2C",
+                        "accent": "#1E314B",
+                        "teal": "#0F766E",
+                        "teal-dark": "#042F2E",
+                        "teal-light": "#14B8A6",
+                        "ivory": "#F8FAFC",
+                        "warm": "#F1F5F9",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "serif": ["Outfit", "sans-serif"],
+                    boxShadow: {
+                        "sm": "0 2px 8px -2px rgba(5, 11, 20, 0.05)",
+                        "md": "0 4px 16px -4px rgba(5, 11, 20, 0.08)",
+                        "lg": "0 8px 32px -8px rgba(5, 11, 20, 0.1)",
+                        "xl": "0 12px 48px -12px rgba(5, 11, 20, 0.12)",
+                        "2xl": "0 24px 64px -24px rgba(5, 11, 20, 0.15)",
+                    },
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        /* === Base === */
+        .image-grade { mix-blend-mode: luminosity; opacity: 0.85; transition: all 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
+        .image-grade:hover { mix-blend-mode: normal; opacity: 1; transform: scale(1.03); }
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; }
+        ::selection { background: rgba(10,38,71,0.12); color: #0A2647; }
+
+        /* === Grid lines === */
+        .grid-line {
+            position: absolute; top: 0; bottom: 0; width: 1px;
+            background-color: rgba(0,0,0,0.04); pointer-events: none; z-index: 0;
+        }
+
+        /* === Reveal animations === */
+        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+        .reveal.revealed { opacity: 1; transform: translateY(0); }
+        .reveal-left { transform: translateX(-40px); }
+        .reveal-left.revealed { transform: translateX(0); }
+        .reveal-right { transform: translateX(40px); }
+        .reveal-right.revealed { transform: translateX(0); }
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+        .stagger-5 { transition-delay: 0.5s; }
+
+        /* === Hero animations === */
+        @keyframes heroFadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-tag { animation: heroFadeUp 0.8s 0.2s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+        .hero-title { animation: heroFadeUp 0.8s 0.4s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+        .hero-sub { animation: heroFadeUp 0.8s 0.6s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+        .hero-cta { animation: heroFadeUp 0.8s 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+
+        /* === Subtle parallax === */
+        .parallax-img { transition: transform 0.1s linear; will-change: transform; }
+
+        /* === Tab system === */
+        .ps-tab-underline { transition: width 0.5s cubic-bezier(0.25,0.46,0.45,0.94); }
+        .ps-tab-active { opacity: 1 !important; }
+        .ps-tab-active .ps-tab-underline { width: 100% !important; }
+        .ps-tab-active .ps-tab-dot { opacity: 1 !important; }
+        .ps-tab-active .ps-tab-label { color: #14919B !important; }
+
+        /* === Smooth panel transitions === */
+        .ps-panel { animation: panelIn 0.5s cubic-bezier(0.25,0.46,0.45,0.94); }
+        @keyframes panelIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* === Button pulse === */
+        @keyframes subtlePulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.3); }
+            50% { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
+        }
+        .btn-pulse:hover { animation: subtlePulse 2s infinite; }
+
+        /* === Noise overlay === */
+        .noise-overlay::after {
+            content: ''; position: absolute; inset: 0; z-index: 1;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        /* === Scrollbar === */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FAFAF8; }
+        ::-webkit-scrollbar-thumb { background: #0A2647; border-radius: 3px; }
+
+        /* === Mobile menu === */
+        .mobile-menu { transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94); }
+        .mobile-menu.open { transform: translateX(0); }
+        .mobile-overlay { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+        .mobile-overlay.open { opacity: 1; pointer-events: auto; }
+
+        /* === Horizontal scroll hide === */
+        #ps-tabs::-webkit-scrollbar { display: none; }
+        #ps-tabs { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* === Marque / partners scroll === */
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .marquee-track { animation: marquee 30s linear infinite; }
+        .marquee-track:hover { animation-play-state: paused; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Colombo Consultants & Management Group",
+        "alternateName": "CCMG",
+        "url": "https://colomboconsultants.lk",
+        "description": "Sri Lanka's premier infrastructure strategy and ESG advisory firm",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Colombo",
+            "addressCountry": "LK"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+94-77-304-7315",
+            "contactType": "Business Development"
+        },
+        "sameAs": []
+    }
+    </script>
+</head>
+
+<body class="bg-ivory text-slate-800 antialiased">
+
+    <!-- Grid Lines -->
+    <div class="fixed inset-0 w-full h-full pointer-events-none mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 hidden xl:flex justify-between z-0">
+        <div class="grid-line" style="left:0"></div>
+        <div class="grid-line" style="left:25%"></div>
+        <div class="grid-line" style="left:50%"></div>
+        <div class="grid-line" style="left:75%"></div>
+        <div class="grid-line" style="right:0"></div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header id="site-header" class="sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-slate-200/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-shadow">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-sans font-bold text-lg tracking-tight text-primary uppercase leading-none">CCMG</span>
+                        <span class="text-[9px] font-medium text-slate-400 tracking-[0.15em] uppercase leading-none mt-0.5">Advisory Group</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center space-x-10 text-[13px] font-medium tracking-wide">
+                    <a class="text-primary border-b-2 border-primary pb-0.5" href="index.html">Home</a>
+                    <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="about.html">About</a>
+                    <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="services.html">Services</a>
+                    <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="projects.html">Projects</a>
+                    <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="sustainability.html">Sustainability</a>
+                    <a class="text-slate-500 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-0.5" href="contact.html">Contact</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a class="bg-primary hover:bg-teal text-white px-7 py-3 rounded-full text-xs font-bold uppercase tracking-widest shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5" href="contact.html">
+                        Book a Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button id="mobile-toggle" class="lg:hidden flex items-center text-primary" type="button" aria-label="Open menu">
+                    <i class="ph ph-list text-[28px]"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="mobile-overlay fixed inset-0 bg-black/50 z-[60] backdrop-blur-sm"></div>
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-[70] shadow-2xl">
+        <div class="flex justify-between items-center p-6 border-b border-slate-100">
+            <span class="font-sans font-bold text-lg text-primary uppercase">Menu</span>
+            <button id="mobile-close" class="text-slate-400 hover:text-primary" aria-label="Close menu">
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
+        <nav class="p-6 space-y-1">
+            <a class="block py-3 px-4 text-primary font-semibold bg-primary/5 rounded-lg" href="index.html">Home</a>
+            <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="about.html">About</a>
+            <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="services.html">Services</a>
+            <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="projects.html">Projects</a>
+            <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="sustainability.html">Sustainability</a>
+            <a class="block py-3 px-4 text-slate-600 hover:text-primary hover:bg-primary/5 rounded-lg transition-colors" href="contact.html">Contact</a>
+        </nav>
+        <div class="p-6 border-t border-slate-100">
+            <a class="block text-center bg-primary text-white py-3.5 rounded-full text-sm font-bold uppercase tracking-widest" href="contact.html">Book a Consultation</a>
+        </div>
+    </div>
+
+
+    <!-- ============ HERO ============ -->
+    <section class="relative z-10 h-[92vh] min-h-[600px] flex items-center overflow-hidden noise-overlay">
+        <div class="absolute inset-0 z-0">
+            <img alt="Colombo skyline with modern infrastructure" class="w-full h-full object-cover parallax-img image-grade" 
+                src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=1600&q=80" loading="eager" />
+            <div class="absolute inset-0 bg-primary/70 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/30 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-12 gap-8">
+                <div class="col-span-12 lg:col-span-9 xl:col-span-8">
+                    <div class="hero-tag inline-flex items-center gap-3 mb-8">
+                        <span class="h-px w-10 bg-teal-light"></span>
+                        <span class="text-teal-light text-[11px] font-bold tracking-[0.25em] uppercase">Strategic Advisory & Local Representation</span>
+                    </div>
+
+                    <h1 class="hero-title text-[clamp(2.5rem,6vw,5rem)] font-serif text-white leading-[1.08] mb-8 tracking-tight font-medium">
+                        Your in-country partner<br class="hidden md:block"/> for Sri Lanka market entry<br class="hidden lg:block"/> & infrastructure.
+                    </h1>
+
+                    <p class="hero-sub text-xl md:text-2xl text-slate-300 max-w-2xl leading-relaxed font-light mb-12">
+                        Navigating Sri Lanka's complexity. Delivering institutional impact across energy, water, transport, and sustainability.
+                    </p>
+
+                    <div class="hero-cta flex flex-col sm:flex-row gap-4 mb-8">
+                        <a class="btn-pulse inline-flex justify-center items-center px-9 py-4 bg-white text-primary hover:bg-teal hover:text-white rounded-full text-[13px] font-bold uppercase tracking-widest shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1" href="contact.html">
+                            Request Representation
+                        </a>
+                        <a class="btn-pulse inline-flex justify-center items-center px-9 py-4 border-2 border-white/60 text-white hover:bg-white/10 hover:border-white rounded-full text-[13px] font-bold uppercase tracking-widest transition-all duration-300 transform hover:-translate-y-1" href="contact.html">
+                            Book a Consultation
+                        </a>
+                    </div>
+
+                    <div>
+                        <a class="inline-flex items-center text-slate-400 hover:text-teal-light text-sm font-medium tracking-wide transition-colors group" href="#services">
+                            Explore our services
+                            <span class="ml-2 group-hover:translate-x-1 transition-transform material-symbols-outlined text-base">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60">
+            <span class="text-white/60 text-[10px] uppercase tracking-widest font-medium">Scroll</span>
+            <div class="w-px h-8 bg-gradient-to-b from-white/40 to-transparent"></div>
+        </div>
+    </section>
+
+
+    <!-- ============ STATS BAR ============ -->
+    <section class="relative z-20 -mt-20 sm:-mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 sm:mb-24">
+        <div class="bg-white/95 backdrop-blur-xl border border-white/40 shadow-2xl rounded-2xl p-8 sm:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-teal/5 rounded-full blur-2xl translate-y-1/3 -translate-x-1/4"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-100 relative z-10">
+                <div class="reveal stagger-1 md:pr-12 pt-8 md:pt-0">
+                    <h3 class="text-6xl md:text-7xl font-light text-primary font-sans mb-3 tracking-tighter">
+                        <span class="stat-number" data-target="19">0</span><span class="text-teal">+</span>
+                    </h3>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 border-t border-slate-200 pt-4 w-12">Tenure</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">
+                        Years navigating complex regulatory landscapes and delivering frameworks across South Asia.
+                    </p>
+                </div>
+                <div class="reveal stagger-3 md:px-12 pt-8 md:pt-0">
+                    <h3 class="text-6xl md:text-7xl font-light text-primary font-sans mb-3 tracking-tighter">
+                        <span class="stat-number" data-target="8">0</span><span class="text-teal">+</span>
+                    </h3>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 border-t border-slate-200 pt-4 w-12">Sectors</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">
+                        Active across energy, transport, water, industrial, digital, sustainability, tourism, and infrastructure finance.
+                    </p>
+                </div>
+                <div class="reveal stagger-5 md:pl-12 pt-8 md:pt-0">
+                    <h3 class="text-6xl md:text-7xl font-light text-primary font-sans mb-3 tracking-tighter">
+                        100<span class="text-teal">%</span>
+                    </h3>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 border-t border-slate-200 pt-4 w-12">Alignment</p>
+                    <p class="text-sm text-slate-500 leading-relaxed font-light">
+                        Deep integration with government bodies, development banks, and private investors for sustainable outcomes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ PARTNERS MARQUEE ============ -->
+    <section class="py-12 bg-ivory border-b border-slate-100 relative z-10 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-[0.3em] text-center">Strategic Partners & Standards Bodies</p>
+        </div>
+        <div class="relative overflow-hidden">
+            <div class="marquee-track flex items-center gap-16 whitespace-nowrap" style="width: max-content;">
+                <!-- Set 1 -->
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">SUEZ</span>
+                <span class="text-base font-bold tracking-widest text-slate-300 uppercase px-4">CECB</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">Gold Standard</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">UNDP</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">ADB</span>
+                <span class="text-base font-bold tracking-widest text-slate-300 uppercase px-4">Carbon Compass</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">Earthood</span>
+                <span class="text-base font-bold tracking-widest text-slate-300 uppercase px-4">World Bank</span>
+                <!-- Duplicate for seamless loop -->
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">SUEZ</span>
+                <span class="text-base font-bold tracking-widest text-slate-300 uppercase px-4">CECB</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">Gold Standard</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">UNDP</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">ADB</span>
+                <span class="text-base font-bold tracking-widest text-slate-300 uppercase px-4">Carbon Compass</span>
+                <span class="text-base font-bold tracking-tight text-slate-300 uppercase px-4">Earthood</span>
+                <span class="text-base font-bold tracking-widest text-slate-300 uppercase px-4">World Bank</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ HOW WE WORK ============ -->
+    <section class="py-24 bg-white relative z-10 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 pb-8 border-b border-slate-200">
+                <div class="reveal max-w-2xl">
+                    <p class="text-teal text-xs font-bold uppercase tracking-[0.2em] mb-4">Our Approach</p>
+                    <h2 class="text-3xl md:text-5xl font-serif text-primary mb-4 leading-tight">How We Work</h2>
+                    <p class="text-slate-500 font-light text-lg">From first engagement to operational stability — a rigorous, three-phase methodology.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+                <!-- Phase 1 -->
+                <div class="reveal stagger-1 group relative py-14 px-8 md:px-10 border-b md:border-b-0 md:border-r border-slate-100 transition-all duration-500 hover:bg-primary/[0.02]">
+                    <span class="absolute top-4 right-6 text-[7rem] leading-none font-serif text-slate-100 select-none -z-10 group-hover:text-slate-200/60 transition-colors">01</span>
+                    <div class="relative z-10 mt-8">
+                        <h3 class="text-3xl font-serif font-semibold text-primary group-hover:text-teal transition-colors mb-6">Assess</h3>
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Comprehensive analysis of the regulatory, political, and market environment. We map stakeholders, evaluate risk, and define clear objectives.
+                        </p>
+                    </div>
+                </div>
+                <!-- Phase 2 -->
+                <div class="reveal stagger-2 group relative py-14 px-8 md:px-10 border-b md:border-b-0 md:border-r border-slate-100 transition-all duration-500 hover:bg-primary/[0.02]">
+                    <span class="absolute top-4 right-6 text-[7rem] leading-none font-serif text-slate-100 select-none -z-10 group-hover:text-slate-200/60 transition-colors">02</span>
+                    <div class="relative z-10 mt-8">
+                        <h3 class="text-3xl font-serif font-semibold text-primary group-hover:text-teal transition-colors mb-6">Strategize</h3>
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Practical roadmaps blending technical diligence with local realities. We structure deals, align partners, and prepare execution-ready plans.
+                        </p>
+                    </div>
+                </div>
+                <!-- Phase 3 -->
+                <div class="reveal stagger-3 group relative py-14 px-8 md:px-10 transition-all duration-500 hover:bg-primary/[0.02]">
+                    <span class="absolute top-4 right-6 text-[7rem] leading-none font-serif text-slate-100 select-none -z-10 group-hover:text-slate-200/60 transition-colors">03</span>
+                    <div class="relative z-10 mt-8">
+                        <h3 class="text-3xl font-serif font-semibold text-primary group-hover:text-teal transition-colors mb-6">Deliver</h3>
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Hands-on support during implementation. We remain embedded partners through to operational stability, ensuring strategy survives contact with reality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ PRIORITY SERVICES (Tabbed) ============ -->
+    <section class="py-0 bg-primary relative z-10" id="services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between">
+                <div class="max-w-2xl">
+                    <p class="text-teal-light font-sans text-xs font-bold uppercase tracking-[0.2em] mb-4">What We Do Best</p>
+                    <h2 class="text-3xl md:text-5xl font-serif text-white mb-4 leading-tight">Priority Services</h2>
+                    <p class="text-slate-400 font-light text-lg">Where rigorous analysis meets practical execution strategy.</p>
+                </div>
+                <a class="mt-8 md:mt-0 self-end inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-teal-light transition-colors" href="services.html">
+                    View All Services <i class="ph ph-arrow-right text-base"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tab selector -->
+        <div class="border-t border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex overflow-x-auto" id="ps-tabs" role="tablist">
+                    <button onclick="setPSTab(0)" id="ps-tab-0" role="tab" aria-selected="true"
+                        class="ps-tab ps-tab-active group flex-1 min-w-[180px] flex flex-col items-start gap-2 py-8 pr-12 border-r border-white/5 text-left transition-all duration-300 cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <div class="ps-tab-dot w-2 h-2 rounded-full bg-teal-light opacity-0 transition-opacity duration-300"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 group-hover:text-teal-light ps-tab-label transition-colors">01</span>
+                        </div>
+                        <span class="font-serif text-xl text-white ps-tab-title leading-tight">Local Representation & Market Entry</span>
+                        <div class="w-0 h-0.5 bg-teal-light ps-tab-underline"></div>
+                    </button>
+                    <button onclick="setPSTab(1)" id="ps-tab-1" role="tab" aria-selected="false"
+                        class="ps-tab group flex-1 min-w-[180px] flex flex-col items-start gap-2 py-8 px-10 border-r border-white/5 text-left transition-all duration-300 cursor-pointer opacity-50 hover:opacity-100">
+                        <div class="flex items-center gap-3">
+                            <div class="ps-tab-dot w-2 h-2 rounded-full bg-teal-light opacity-0 transition-opacity duration-300"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 group-hover:text-teal-light ps-tab-label transition-colors">02</span>
+                        </div>
+                        <span class="font-serif text-xl text-white ps-tab-title leading-tight">Power & Gas Advisory</span>
+                        <div class="w-0 h-0.5 bg-teal-light ps-tab-underline"></div>
+                    </button>
+                    <button onclick="setPSTab(2)" id="ps-tab-2" role="tab" aria-selected="false"
+                        class="ps-tab group flex-1 min-w-[180px] flex flex-col items-start gap-2 py-8 px-10 border-r border-white/5 text-left transition-all duration-300 cursor-pointer opacity-50 hover:opacity-100">
+                        <div class="flex items-center gap-3">
+                            <div class="ps-tab-dot w-2 h-2 rounded-full bg-teal-light opacity-0 transition-opacity duration-300"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 group-hover:text-teal-light ps-tab-label transition-colors">03</span>
+                        </div>
+                        <span class="font-serif text-xl text-white ps-tab-title leading-tight">Sustainability & ESG</span>
+                        <div class="w-0 h-0.5 bg-teal-light ps-tab-underline"></div>
+                    </button>
+                    <button onclick="setPSTab(3)" id="ps-tab-3" role="tab" aria-selected="false"
+                        class="ps-tab group flex-1 min-w-[180px] flex flex-col items-start gap-2 py-8 px-10 text-left transition-all duration-300 cursor-pointer opacity-50 hover:opacity-100">
+                        <div class="flex items-center gap-3">
+                            <div class="ps-tab-dot w-2 h-2 rounded-full bg-teal-light opacity-0 transition-opacity duration-300"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 group-hover:text-teal-light ps-tab-label transition-colors">04</span>
+                        </div>
+                        <span class="font-serif text-xl text-white ps-tab-title leading-tight">PPP & Transaction Advisory</span>
+                        <div class="w-0 h-0.5 bg-teal-light ps-tab-underline"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panels -->
+        <div class="border-t border-white/5">
+            <!-- Panel 0: Local Rep -->
+            <div id="ps-panel-0" class="ps-panel">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div class="mb-8">
+                            <span class="text-teal-light text-xs font-bold uppercase tracking-widest">On-Ground Partner</span>
+                        </div>
+                        <p class="text-slate-300 text-xl font-light leading-relaxed mb-10">
+                            We act as your dedicated local partner, navigating complex regulatory approvals and forging the stakeholder relationships needed for seamless market entry into Sri Lanka.
+                        </p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Regulatory Compliance & Approvals</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Government Liaison & Advocacy</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Stakeholder Mapping & Engagement</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Market Entry Strategy & Execution</span></li>
+                        </ul>
+                        <a class="inline-flex items-center gap-3 px-8 py-4 bg-teal text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-teal-dark shadow-lg hover:shadow-teal-dark/40 transition-all hover:-translate-y-0.5" href="services.html">
+                            Explore Service <i class="ph ph-arrow-right text-base"></i>
+                        </a>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-slate-800 shadow-2xl border border-white/5">
+                            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80" alt="Local Representation" class="w-full h-full object-cover opacity-70 hover:opacity-90 transition-opacity duration-700 scale-105 image-grade" loading="lazy" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-8 left-8">
+                                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-xs">
+                                    <p class="text-white text-3xl font-serif font-bold">50+</p>
+                                    <p class="text-slate-300 text-sm font-light mt-1">Strategic partnerships forged</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 1: Power & Gas -->
+            <div id="ps-panel-1" class="ps-panel hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div class="mb-8">
+                            <span class="text-teal-light text-xs font-bold uppercase tracking-widest">Energy Infrastructure</span>
+                        </div>
+                        <p class="text-slate-300 text-xl font-light leading-relaxed mb-10">
+                            From prefeasibility to operations, CCMG provides technically rigorous and commercially grounded consulting across the full lifecycle of power, gas, and energy infrastructure projects.
+                        </p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Power & Energy Sector Advisory</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Inline Integrity Testing & Pipeline Inspection</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Pre-Feasibility Studies — Gas & Power</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Pre-Bid Advisory & Tender Support</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Project Execution Support & HSE Consulting</span></li>
+                        </ul>
+                        <a class="inline-flex items-center gap-3 px-8 py-4 bg-teal text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-teal-dark shadow-lg transition-all hover:-translate-y-0.5" href="services.html">
+                            Explore Service <i class="ph ph-arrow-right text-base"></i>
+                        </a>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-slate-800 shadow-2xl border border-white/5">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80" alt="Power & Energy" class="w-full h-full object-cover opacity-70 hover:opacity-90 transition-opacity duration-700 scale-105 image-grade" loading="lazy" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-8 left-8">
+                                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-xs">
+                                    <p class="text-white text-3xl font-serif font-bold">GW-Scale</p>
+                                    <p class="text-slate-300 text-sm font-light mt-1">Energy projects advised</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2: ESG -->
+            <div id="ps-panel-2" class="ps-panel hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div class="mb-8">
+                            <span class="text-teal-light text-xs font-bold uppercase tracking-widest">Gold Standard Partner</span>
+                        </div>
+                        <p class="text-slate-300 text-xl font-light leading-relaxed mb-10">
+                            As a Gold Standard local partner, we help organizations develop, implement, and report on ESG strategies — from carbon credit origination to corporate GHG tracking and climate-resilient frameworks.
+                        </p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Carbon Project Origination & Registration</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Corporate GHG Tracking (Scope 1–3)</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">ESG Readiness & Capacity Building</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">VCS & Gold Standard Methodology Alignment</span></li>
+                        </ul>
+                        <a class="inline-flex items-center gap-3 px-8 py-4 bg-teal text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-teal-dark shadow-lg transition-all hover:-translate-y-0.5" href="sustainability.html">
+                            Explore Service <i class="ph ph-arrow-right text-base"></i>
+                        </a>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-slate-800 shadow-2xl border border-white/5">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Sustainability & ESG" class="w-full h-full object-cover opacity-70 hover:opacity-90 transition-opacity duration-700 scale-105 image-grade" loading="lazy" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-8 left-8">
+                                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-xs">
+                                    <p class="text-white text-3xl font-serif font-bold">GS</p>
+                                    <p class="text-slate-300 text-sm font-light mt-1">Gold Standard local partner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 3: PPP -->
+            <div id="ps-panel-3" class="ps-panel hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div class="mb-8">
+                            <span class="text-teal-light text-xs font-bold uppercase tracking-widest">Transaction Advisory</span>
+                        </div>
+                        <p class="text-slate-300 text-xl font-light leading-relaxed mb-10">
+                            We structure bankable PPPs and manage complex transactions — integrating project delivery, policy alignment, and multi-stakeholder engagement for regulatory and operational success.
+                        </p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">PPP Structuring & Financial Modelling</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Bid Process Management & Evaluation</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Contract Negotiation & Regulatory Compliance</span></li>
+                            <li class="flex items-start gap-4"><div class="w-5 h-5 rounded-full border border-teal-light/40 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph ph-check text-teal-light text-xs"></i></div><span class="text-slate-400 font-light">Post-Award Implementation Support</span></li>
+                        </ul>
+                        <a class="inline-flex items-center gap-3 px-8 py-4 bg-teal text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-teal-dark shadow-lg transition-all hover:-translate-y-0.5" href="services.html">
+                            Explore Service <i class="ph ph-arrow-right text-base"></i>
+                        </a>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <div class="aspect-[4/3] rounded-3xl overflow-hidden bg-slate-800 shadow-2xl border border-white/5">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" alt="PPP Advisory" class="w-full h-full object-cover opacity-70 hover:opacity-90 transition-opacity duration-700 scale-105 image-grade" loading="lazy" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-8 left-8">
+                                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-xs">
+                                    <p class="text-white text-3xl font-serif font-bold">18+ yrs</p>
+                                    <p class="text-slate-300 text-sm font-light mt-1">Transaction advisory experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="py-24 bg-white relative z-10 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-8 border-b border-slate-200">
+                <div class="reveal max-w-2xl">
+                    <p class="text-teal text-xs font-bold uppercase tracking-[0.2em] mb-4">Our Work</p>
+                    <h2 class="text-3xl md:text-5xl font-serif text-primary mb-4 leading-tight">Proven Delivery in Sri Lanka</h2>
+                    <p class="text-slate-500 font-light text-lg">Impact across critical infrastructure sectors.</p>
+                </div>
+                <a class="mt-6 md:mt-0 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-primary transition-colors" href="projects.html">
+                    View All Projects <i class="ph ph-arrow-right text-base"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="reveal stagger-1 group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl cursor-pointer overflow-hidden transition-all duration-500">
+                    <div class="h-56 w-full mb-5 overflow-hidden rounded-xl bg-slate-100 relative">
+                        <img alt="Mahaweli Water Security Investment Program" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105 image-grade"
+                            src="https://images.unsplash.com/photo-1504297050568-910d24c426d3?w=600&q=80" loading="lazy" />
+                        <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm shadow-md rounded-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">Water Infrastructure</div>
+                    </div>
+                    <div class="px-1 pb-3">
+                        <h3 class="text-xl font-serif font-semibold text-primary mb-2 group-hover:text-teal transition-colors">Mahaweli Water Security (MWSIP)</h3>
+                        <p class="text-slate-500 text-sm font-light leading-relaxed">Strategic water-transfer and irrigation modernization program tied to drought resilience and regional development.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="reveal stagger-2 group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl cursor-pointer overflow-hidden transition-all duration-500">
+                    <div class="h-56 w-full mb-5 overflow-hidden rounded-xl bg-slate-100 relative">
+                        <img alt="Mallavi Urban Water Supply Scheme" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105 image-grade"
+                            src="https://images.unsplash.com/photo-1581092160607-ee22731cc4f2?w=600&q=80" loading="lazy" />
+                        <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm shadow-md rounded-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">Urban Water</div>
+                    </div>
+                    <div class="px-1 pb-3">
+                        <h3 class="text-xl font-serif font-semibold text-primary mb-2 group-hover:text-teal transition-colors">Mallavi Urban Water Scheme</h3>
+                        <p class="text-slate-500 text-sm font-light leading-relaxed">Expanding urban water access and improving daily conditions in drought-prone, underserved areas of Mullaitivu.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="reveal stagger-3 group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl cursor-pointer overflow-hidden transition-all duration-500">
+                    <div class="h-56 w-full mb-5 overflow-hidden rounded-xl bg-slate-100 relative">
+                        <img alt="U.S. Embassy New Facility" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105 image-grade"
+                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" loading="lazy" />
+                        <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm shadow-md rounded-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">Diplomatic</div>
+                    </div>
+                    <div class="px-1 pb-3">
+                        <h3 class="text-xl font-serif font-semibold text-primary mb-2 group-hover:text-teal transition-colors">U.S. Embassy New Facility</h3>
+                        <p class="text-slate-500 text-sm font-light leading-relaxed">Strategic advisory for high-security, international-standard diplomatic infrastructure delivery.</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="reveal stagger-1 group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl cursor-pointer overflow-hidden transition-all duration-500">
+                    <div class="h-56 w-full mb-5 overflow-hidden rounded-xl bg-slate-100 relative">
+                        <img alt="Tsunami Affected Areas Rebuilding" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105 image-grade"
+                            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" loading="lazy" />
+                        <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm shadow-md rounded-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">Reconstruction</div>
+                    </div>
+                    <div class="px-1 pb-3">
+                        <h3 class="text-xl font-serif font-semibold text-primary mb-2 group-hover:text-teal transition-colors">Tsunami Rebuilding (TAARP)</h3>
+                        <p class="text-slate-500 text-sm font-light leading-relaxed">Post-disaster reconstruction restoring social infrastructure, community services, and livelihoods.</p>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="reveal stagger-2 group bg-white rounded-2xl p-4 border border-slate-100 shadow-sm hover:shadow-xl cursor-pointer overflow-hidden transition-all duration-500">
+                    <div class="h-56 w-full mb-5 overflow-hidden rounded-xl bg-slate-100 relative">
+                        <img alt="Corporate Restructuring" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105 image-grade"
+                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" loading="lazy" />
+                        <div class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm shadow-md rounded-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">Corporate Advisory</div>
+                    </div>
+                    <div class="px-1 pb-3">
+                        <h3 class="text-xl font-serif font-semibold text-primary mb-2 group-hover:text-teal transition-colors">Corporate Restructuring</h3>
+                        <p class="text-slate-500 text-sm font-light leading-relaxed">Improving competitiveness through operational restructuring in major Sri Lankan export sectors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ WHO WE HELP + OUTCOMES (BENTO GRID) ============ -->
+    <section class="py-24 md:py-32 bg-primary relative z-10 noise-overlay border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Header -->
+            <div class="mb-16 md:flex md:items-end md:justify-between">
+                <div class="max-w-2xl reveal">
+                    <p class="text-teal-light text-xs font-bold uppercase tracking-[0.2em] mb-4">Clients & Outcomes</p>
+                    <h2 class="text-4xl md:text-5xl font-serif text-white leading-tight">Delivering certainty for<br/>institutional stakeholders.</h2>
+                </div>
+                <div class="mt-8 md:mt-0 reveal">
+                    <p class="text-slate-400 font-light text-lg max-w-sm">We orchestrate complex projects from concept to shovel-ready execution across four key domains.</p>
+                </div>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
+                
+                <!-- 1. Global Investors (2x2) -->
+                <div class="reveal stagger-1 lg:col-span-2 lg:row-span-2 relative rounded-3xl overflow-hidden group border border-white/10 flex flex-col min-h-[400px]">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Global Investors" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 image-grade opacity-40 text-transparent">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent pointer-events-none"></div>
+                    <div class="relative z-10 flex-1 flex flex-col justify-end p-8 md:p-10 pointer-events-none">
+                        <h4 class="text-3xl font-serif text-white mb-3">Global Investors</h4>
+                        <p class="text-slate-300 font-light leading-relaxed max-w-md">Due diligence, market entry strategy, and dedicated local representation for foreign direct investment.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Outcome: Regulatory (1x1) -->
+                <div class="reveal stagger-2 lg:col-span-1 lg:row-span-1 bg-primary-light rounded-3xl p-8 border border-white/5 hover:border-teal/50 transition-colors group flex flex-col justify-between min-h-[220px]">
+                    <div class="mb-6">
+                        <span class="text-teal-light text-[10px] font-bold uppercase tracking-widest">Outcome</span>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-serif text-white mb-2">Regulatory Clearance</h5>
+                        <p class="text-slate-400 text-sm font-light">Seamless navigation of local permitting and approvals.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Public Agencies (1x1) -->
+                <div class="reveal stagger-3 lg:col-span-1 lg:row-span-1 bg-gradient-to-br from-teal-dark to-primary-light rounded-3xl p-8 border border-teal/20 hover:border-teal/50 transition-colors group flex flex-col justify-between min-h-[220px]">
+                    <div class="mb-6">
+                        <span class="text-teal-light text-[10px] font-bold uppercase tracking-widest leading-none block">Public Agencies</span>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-serif text-white mb-2">Public Agencies</h5>
+                        <p class="text-teal-light/70 text-sm font-light">Structuring bankable PPPs & regulatory frameworks.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Development Partners (2x1) -->
+                <div class="reveal stagger-2 lg:col-span-2 lg:row-span-1 bg-primary-light rounded-3xl p-8 border border-white/5 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 min-h-[220px] group hover:bg-[#15243D] transition-colors hover:border-white/10">
+                    <div class="mb-2">
+                        <span class="text-teal-light text-[10px] font-bold uppercase tracking-widest leading-none block">Partnership</span>
+                    </div>
+                    <div>
+                        <h5 class="text-2xl font-serif text-white mb-2">Development Partners & Donors</h5>
+                        <p class="text-slate-400 font-light">Implementing donor-funded programs with strict adherence to international compliance standards and safeguarding protocols.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Outcome: Stakeholder (1x1) -->
+                <div class="reveal stagger-1 lg:col-span-1 lg:row-span-1 bg-primary-light rounded-3xl p-8 border border-white/5 hover:border-teal/50 transition-colors group flex flex-col justify-between min-h-[220px]">
+                    <div class="mb-6">
+                        <span class="text-teal-light text-[10px] font-bold uppercase tracking-widest">Outcome</span>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-serif text-white mb-2">Stakeholder Alignment</h5>
+                        <p class="text-slate-400 text-sm font-light">Consensus across public, private, and community sectors.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Corporates (1x1) -->
+                <div class="reveal stagger-2 lg:col-span-1 lg:row-span-1 bg-primary-light rounded-3xl p-8 border border-white/5 hover:bg-[#15243D] hover:border-white/10 transition-colors flex flex-col justify-between min-h-[220px] group">
+                    <div class="mb-6">
+                        <span class="text-slate-500 text-[10px] font-bold uppercase tracking-widest leading-none block">Institutions</span>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-serif text-white mb-2">Corporates</h5>
+                        <p class="text-slate-400 text-sm font-light">Guiding large projects through environmental and social compliance.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Outcome: ESG (1x1) -->
+                <div class="reveal stagger-3 lg:col-span-1 lg:row-span-1 bg-primary-light rounded-3xl p-8 border border-white/5 hover:border-teal/50 transition-colors group flex flex-col justify-between min-h-[220px]">
+                    <div class="mb-6">
+                        <span class="text-teal-light text-[10px] font-bold uppercase tracking-widest">Outcome</span>
+                    </div>
+                    <div>
+                        <h5 class="text-xl font-serif text-white mb-2">Audit-ready ESG</h5>
+                        <p class="text-slate-400 text-sm font-light">Data-driven frameworks prepared for international scrutiny.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Outcome: Implementation (1x1) -->
+                <div class="reveal stagger-4 lg:col-span-1 lg:row-span-1 bg-accent rounded-3xl p-8 border border-white/10 flex flex-col justify-between min-h-[220px] relative overflow-hidden group hover:border-[#3E5C8A] transition-colors">
+                    <!-- No Icon -->
+                    <div class="relative z-10 flex flex-col h-full justify-between pointer-events-none">
+                        <span class="text-white/60 text-[10px] font-bold uppercase tracking-widest mb-6 block">Ultimate Result</span>
+                        <div>
+                            <h5 class="text-2xl font-serif text-white mb-2">Implementation Ready</h5>
+                            <p class="text-white/80 text-sm font-light">From strategy to shovel-ready execution plans.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ FLAGSHIP CASE STUDY ============ -->
+    <section class="relative bg-primary py-32 overflow-hidden noise-overlay">
+        <div class="absolute inset-0 z-0">
+            <img alt="Mahaweli Water" class="w-full h-full object-cover opacity-20 mix-blend-overlay grayscale image-grade"
+                src="https://images.unsplash.com/photo-1504297050568-910d24c426d3?w=1200&q=60" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-2/3">
+                    <div class="inline-flex items-center gap-3 mb-6">
+                        <span class="h-px w-8 bg-teal-light"></span>
+                        <span class="text-teal-light text-xs font-bold uppercase tracking-[0.2em]">Flagship Case Study</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-[3.5rem] font-serif text-white mb-6 leading-tight">
+                        Mahaweli Water Security Investment Program
+                    </h2>
+                    <p class="text-slate-400 font-light text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
+                        A strategic USD 675 million water-transfer and irrigation modernization program tied to farming output and drought resilience. CCMG's involvement demonstrates our capability in delivering large public infrastructure.
+                    </p>
+                    <a class="inline-flex items-center gap-2 text-white border-b border-white/40 pb-1 hover:text-teal-light hover:border-teal-light transition-all duration-300 group" href="projects.html">
+                        <span class="text-sm font-bold uppercase tracking-widest">Read the full case study</span>
+                        <i class="ph ph-arrow-right text-base group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+                <div class="lg:w-1/3 border-l border-white/10 pl-8 lg:pl-12">
+                    <div class="grid grid-cols-1 gap-10">
+                        <div>
+                            <p class="text-4xl font-light text-white font-serif mb-1">350K+</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest">Beneficiaries Impacted</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-light text-white font-serif mb-1">$675M</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest">Total Investment</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-light text-white font-serif mb-1">ADB</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest">Key Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ FAQ ============ -->
+    <section class="py-24 bg-white relative z-10 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <p class="text-teal text-xs font-bold uppercase tracking-[0.2em] mb-4">Got Questions?</p>
+                <h2 class="text-3xl md:text-4xl font-serif text-primary">Frequently Asked Questions</h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-5">
+                <div class="bg-ivory p-7 rounded-xl border border-slate-100 hover:border-primary/20 transition-all duration-300 group cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').textContent = this.querySelector('.faq-answer').classList.contains('hidden') ? 'add' : 'remove'">
+                    <div class="flex justify-between items-start gap-4">
+                        <h3 class="text-lg font-serif font-semibold text-primary group-hover:text-teal transition-colors">How does CCMG handle local compliance for foreign investors?</h3>
+                        <i class="ph ph-plus text-slate-400 faq-icon flex-shrink-0 mt-1"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4">
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            We leverage deep understanding of the local regulatory environment to navigate permits, environmental clearances, and legal requirements efficiently. We act as your on-ground compliance officer, coordinating with relevant authorities.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-ivory p-7 rounded-xl border border-slate-100 hover:border-primary/20 transition-all duration-300 group cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').textContent = this.querySelector('.faq-answer').classList.contains('hidden') ? 'add' : 'remove'">
+                    <div class="flex justify-between items-start gap-4">
+                        <h3 class="text-lg font-serif font-semibold text-primary group-hover:text-teal transition-colors">What ESG standards do you align with?</h3>
+                        <i class="ph ph-plus text-slate-400 faq-icon flex-shrink-0 mt-1"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4">
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Our frameworks align with GRI, SASB, ISO 14001, and the UN SDGs — ensuring your projects meet international investment criteria and donor requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-ivory p-7 rounded-xl border border-slate-100 hover:border-primary/20 transition-all duration-300 group cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').textContent = this.querySelector('.faq-answer').classList.contains('hidden') ? 'add' : 'remove'">
+                    <div class="flex justify-between items-start gap-4">
+                        <h3 class="text-lg font-serif font-semibold text-primary group-hover:text-teal transition-colors">Can you represent us in negotiations with government bodies?</h3>
+                        <i class="ph ph-plus text-slate-400 faq-icon flex-shrink-0 mt-1"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4">
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Yes, CCMG specializes in government liaison and advocacy. We act as your authorized representative to facilitate transparent, effective, and compliant dialogue with public sector entities.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-ivory p-7 rounded-xl border border-slate-100 hover:border-primary/20 transition-all duration-300 group cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').textContent = this.querySelector('.faq-answer').classList.contains('hidden') ? 'add' : 'remove'">
+                    <div class="flex justify-between items-start gap-4">
+                        <h3 class="text-lg font-serif font-semibold text-primary group-hover:text-teal transition-colors">What is your "integrator model"?</h3>
+                        <i class="ph ph-plus text-slate-400 faq-icon flex-shrink-0 mt-1"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4">
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Unlike traditional consultancies that only advise, we integrate into your team. We take ownership of outcomes, coordinating between technical, legal, and financial stakeholders to ensure project delivery.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-ivory p-7 rounded-xl border border-slate-100 hover:border-primary/20 transition-all duration-300 group cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden'); this.querySelector('.faq-icon').textContent = this.querySelector('.faq-answer').classList.contains('hidden') ? 'add' : 'remove'">
+                    <div class="flex justify-between items-start gap-4">
+                        <h3 class="text-lg font-serif font-semibold text-primary group-hover:text-teal transition-colors">Do you help with Carbon Credit projects?</h3>
+                        <i class="ph ph-plus text-slate-400 faq-icon flex-shrink-0 mt-1"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4">
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Absolutely. We assist in identification, validation, and verification of carbon projects under VCS and Gold Standard methodologies, helping clients monetize their environmental impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="py-20 bg-gradient-to-br from-primary to-primary-light text-white relative overflow-hidden rounded-2xl mx-4 sm:mx-8 lg:mx-auto max-w-7xl shadow-2xl mb-16">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-teal/10 skew-x-12 transform origin-top-right"></div>
+        <div class="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-4 leading-tight">Ready to transform your infrastructure strategy?</h2>
+                    <p class="text-slate-300 font-light text-lg">Our senior partners are ready to discuss your objectives.</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end gap-3 flex-shrink-0">
+                    <a class="inline-flex justify-center items-center px-10 py-5 bg-white text-primary hover:bg-teal hover:text-white rounded-full text-sm font-bold uppercase tracking-widest shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 min-w-[260px]" href="contact.html">
+                        Book a Consultation
+                    </a>
+                    <p class="text-xs text-slate-400 font-normal flex items-center gap-1 mt-2">
+                        <i class="ph ph-clock text-[14px]"></i>
+                        Typical response time: &lt; 4 hours
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-primary text-white pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20 border-b border-white/10 pb-16">
+                <!-- Brand -->
+                <div class="md:col-span-4 pr-8">
+                    <div class="flex items-center gap-2 mb-8">
+                        <div class="w-7 h-7 bg-white/10 flex items-center justify-center text-white">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <span class="font-sans font-bold text-lg tracking-tight text-white uppercase">CCMG</span>
+                    </div>
+                    <h4 class="font-serif text-3xl mb-6 text-slate-100">Global reach,<br/>local insight.</h4>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed max-w-sm">
+                        Sri Lanka's premier infrastructure strategy firm. Delivering clarity in complex environments through rigorous analysis and on-ground expertise.
+                    </p>
+                </div>
+                <!-- Sitemap -->
+                <div class="md:col-span-2 md:col-start-7">
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-8">Sitemap</h5>
+                    <ul class="space-y-4 text-sm font-light text-slate-300">
+                        <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+                        <li><a class="hover:text-white transition-colors" href="about.html">About</a></li>
+                        <li><a class="hover:text-white transition-colors" href="services.html">Services</a></li>
+                        <li><a class="hover:text-white transition-colors" href="projects.html">Projects</a></li>
+                        <li><a class="hover:text-white transition-colors" href="sustainability.html">Sustainability</a></li>
+                        <li><a class="hover:text-white transition-colors" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Legal -->
+                <div class="md:col-span-2">
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-8">Legal</h5>
+                    <ul class="space-y-4 text-sm font-light text-slate-300">
+                        <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+                    </ul>
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-4 mt-10">Partners</h5>
+                    <ul class="space-y-4 text-sm font-light text-slate-300">
+                        <li><a class="hover:text-white transition-colors" href="https://www.carboncompass.com/" target="_blank" rel="noopener">Carbon Compass</a></li>
+                        <li><a class="hover:text-white transition-colors" href="https://www.earthood.com/" target="_blank" rel="noopener">Earthood</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="md:col-span-2">
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-8">Contact</h5>
+                    <address class="not-italic text-sm font-light text-slate-300 space-y-1">
+                        <p>Colombo, Sri Lanka</p>
+                        <p class="mt-6"><a class="text-white border-b border-white/30 hover:border-white pb-px transition-colors" href="mailto:info@colomboconsultants.lk">info@colomboconsultants.lk</a></p>
+                        <p><a class="text-white border-b border-white/30 hover:border-white pb-px transition-colors" href="tel:+94773047315">+94 77 304 7315</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 font-light">
+                <p>&copy; 2025 Colombo Consultants &amp; Management Group. All rights reserved.</p>
+                <div class="flex items-center gap-3 mt-4 md:mt-0">
+                    <span class="text-[10px] uppercase tracking-widest text-slate-600">Gold Standard Partner</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ============ SCRIPTS ============ -->
+    <script>
+        // === Tab System ===
+        function setPSTab(idx) {
+            const tabs = document.querySelectorAll('.ps-tab');
+            const panels = document.querySelectorAll('.ps-panel');
+            tabs.forEach((t, i) => {
+                const isActive = i === idx;
+                t.classList.toggle('ps-tab-active', isActive);
+                t.classList.toggle('opacity-50', !isActive);
+                if (isActive) t.classList.remove('opacity-50');
+                t.querySelector('.ps-tab-underline').style.width = isActive ? '100%' : '0%';
+                t.querySelector('.ps-tab-dot').style.opacity = isActive ? '1' : '0';
+            });
+            panels.forEach((p, i) => p.classList.toggle('hidden', i !== idx));
+        }
+
+        // === Mobile Menu ===
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileClose = document.getElementById('mobile-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+
+        function openMenu() { mobileMenu.classList.add('open'); mobileOverlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+        function closeMenu() { mobileMenu.classList.remove('open'); mobileOverlay.classList.remove('open'); document.body.style.overflow = ''; }
+
+        mobileToggle.addEventListener('click', openMenu);
+        mobileClose.addEventListener('click', closeMenu);
+        mobileOverlay.addEventListener('click', closeMenu);
+
+        // === Intersection Observer for reveals ===
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // === Stat counter ===
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.target);
+                    let current = 0;
+                    const duration = 1500;
+                    const step = target / (duration / 16);
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) { current = target; clearInterval(timer); }
+                        el.textContent = Math.floor(current);
+                    }, 16);
+                    statObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number').forEach(el => statObserver.observe(el));
+
+        // === Header shrink on scroll ===
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('site-header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        }, { passive: true });
+
+        // === Parallax hero ===
+        window.addEventListener('scroll', () => {
+            const img = document.querySelector('.parallax-img');
+            if (img) {
+                const scrolled = window.scrollY;
+                img.style.transform = `translateY(${scrolled * 0.3}px) scale(1.1)`;
+            }
+        }, { passive: true });
+
+        // === Smooth scroll for anchor links ===
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => setPSTab(0));
+    </script>
+</body>
+</html>
+
+
