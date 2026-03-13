@@ -1,0 +1,7 @@
+1.Green Loan Product Design + Borrower Pipeline — design RDB's green loan suite, connect their borrowers to auditors/certifiers
+2.Green Bond / Sustainability Bond Issuance — help RDB access IFC/ADB concessional funding lines and issue on CSE
+3.CBSL Climate Risk / SLFRS S2 Compliance — mandatory for all licensed banks; RDB has zero internal capacity
+4.Sustainable Agriculture Lending Programme — preferential rates for certified farmers, you broker the certification
+5.Carbon Credit Pre-Finance Facility — RDB lends against projected carbon revenue for smallholders; first-mover in Sri Lanka
+6.ESG / Impact Reporting Framework — builds RDB's credentialing document for IFC/ADB applications
+7.Branch Network as Distribution Infrastructure — RDB's 272 branches as the rural delivery point for your other sustainability services
